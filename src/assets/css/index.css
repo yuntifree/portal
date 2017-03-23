@@ -1,0 +1,386 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+@charset "utf-8";
+
+html{
+  color:#000;
+  background:#f7f7f7;
+  font-size: 100px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, b,cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,label{
+  margin:0;
+  padding:0;
+ /*  font-family: "Microsoft YaHei","微软雅黑","宋体","Arial"; */
+ font-family: PingFangSC,'Microsoft YaHei',Helvetica,Arial,sans-serif;
+  tap-highlight-color:rgba(255,0,0,0);
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  font-weight: normal;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  position: relative;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img{
+  border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul,li{
+  list-style:none;
+}
+caption,th{
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,q:after{
+  content:'';
+}
+abbr,acronym{
+  border:0;
+  font-variant:normal;
+}
+sup{
+  vertical-align:text-top;
+}
+sub{
+  vertical-align:text-bottom;
+}
+
+a,i,em{
+  font-style: normal;
+  text-decoration: none;
+}
+input,textarea,select,button{
+  border:0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  resize:none;
+  -webkit-appearance: none;
+}
+
+
+legend{
+  color:#000;
+}
+#yui3-css-stamp.cssreset{ display:none;}
+/*清除浮动*/
+.g-cl{clear: both;}
+
+.g-clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.g-clearfix {
+  zoom: 1;
+}
+
+.g-font12 {
+  font-size: 12px;
+}
+
+.g-font28 {
+  font-size: .28rem;
+}
+
+.g-fl{
+  float: left;
+}
+
+.g-fr{
+  float: right;
+}
+
+.g-tac {
+    text-align: center;
+}
+.login {
+  width: 100%;
+  height: 100%;
+}
+.login-top,
+.login-top-bg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.login-logo {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0.32rem;
+  left: 50%;
+  margin-left: -0.6rem;
+}
+.oneclick-logo {
+  top:1.24rem;
+}
+.top-text {
+  width: 100%;
+  font-size: 0.36rem;
+  color: #5a5a5a;
+  text-align: center;
+  margin-top: 0.48rem;
+}
+.oneclick-text {
+  position: absolute;
+  left: 50%;
+  bottom: 1.42rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.input-main {
+  width: 70%;
+  margin: 1.2rem auto 0;
+}
+.input-info {
+  width: 100%;
+  padding: 0.42rem 0 0;
+  position: relative;
+}
+.input-img {
+  display: block;
+  width: 0.4rem;
+  height: 0.6rem;
+  padding: 0.1rem 0;
+}
+.input-img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.input-info input {
+  width: 91%;
+  height: auto;
+  padding: 0.1rem 0;
+  border-bottom: 1px solid #c8c8c8;
+  font-size: 0.32rem;
+  color: #000;
+}
+.input-info input::placeholder {
+  color: #c8c8c8;
+}
+.input-info input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+.query-code {
+  padding-left: 0.14rem;
+  position: absolute;
+  top: 65%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  font-size: 0.28rem;
+  color: #00a0fb;
+  border-left: 1px solid #00a0fb;
+}
+.btn {
+  width: 100%;
+  line-height: 0.8rem;
+  border-radius: 0.14rem;
+  margin-top: 0.36rem;
+  background-color: #00a0fb;
+  font-size: 0.36rem;
+  color: #fff;
+}
+.login-bottom {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.company-img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin:  0 auto;
+}
+.app-ads {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.tip-info {
+  width: 140px;
+  padding: 10px 0;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  margin-left: -70px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.pc-container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('../images/pc_img_bg.png') no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+}
+
+/*pc*/
+.pc-login-main {
+  width: 400px;
+  height: 300px;
+  padding: 0 77px;
+  background-color: #fff;
+  box-shadow: 0 20px 20px 0 rgba(80, 80, 80, 0.5);
+  -webkit-box-shadow: 0 20px 20px 0 rgba(80, 80, 80, 0.5);
+  -ms-box-shadow: 0 20px 20px 0 rgba(80, 80, 80, 0.5);
+  -o-box-shadow: 0 20px 20px 0 rgba(80, 80, 80, 0.5);
+  -ms-box-shadow: 0 20px 20px 0 rgba(80, 80, 80, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+}
+.pc-login-dglogo {
+  display: block;
+  width: 117px;
+  height: auto;
+  margin: 0 auto;
+}
+.onepc-login-dglogo {
+  margin: 26px auto 20px;
+}
+.pc-dgpc-text {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.pcone-dgpc-text {
+}
+.pc-input-info {
+  width: 246px;
+  padding: 20px 0 0;
+  position: relative;
+}
+.pc-input-img {
+  display: block;
+  width: 20px;
+  height: 30px;
+  padding: 5px 0;
+}
+.pc-input-img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.pc-input-info input {
+  width: 220px;
+  height: auto;
+  padding: 5px 0;
+  border-bottom: 1px solid #c8c8c8;
+  font-size: 16px;
+  color: #000;
+}
+.pc-input-info input::placeholder {
+  color: #c8c8c8;
+}
+.pc-input-info input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+.pc-query-code {
+  padding-left: 7px;
+  position: absolute;
+  top: 65%;
+  right: 0;
+  font-size: 14px;
+  color: #00a0fb;
+  border-left: 1px solid #00a0fb;
+}
+.pc-btn {
+  display: block;
+  width: 246px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  margin: 28px auto;
+  font-size: 18px;
+}
+.onepc-btn {
+  margin: 60px auto 0;
+}
+.qr-code {
+  width: 74px;
+  height: auto;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.wechat-code {
+  top: 58%;
+}
+.qr-code img {
+  display: block;
+  width: 74px;
+  height: 74px;
+}
+.qr-code p {
+  font-size: 14px;
+  color: #fff;
+}
+.pccompay-text {
+  display: block;
+  width: 226px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 57px;
+  margin-left: -113px;
+}
+
+
+
+
+
+
+
+
